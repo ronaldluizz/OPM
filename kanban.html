@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylew.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Optimization - Trazendo a solução</title>
+    <link rel="icon" href="../files/logo.jpg">
+</head>
+
+<body>
+    <style>A {text-decoration: none;}</style>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Checklist.html">Checklist</a></li>
+            <li><a href="kanban.html">Kanban</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Kanban</h1>
+    <section class="boards">
+        <div class="board">
+            <h3>Tarefas</h3>
+            <ul id="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
+            </ul>
+            <div class="add-card" onclick="addCard(this)">
+                <p>Adicionar tarefa</p>
+            </div>
+        </div>
+        <div class="board">
+            <h3>Em andamento</h3>
+            <ul id="doing" ondrop="drop(event, this.id)" ondragover="over(event)">
+            </ul>
+            <div class="add-card" onclick="addCard(this)">
+                <p>Adicionar tarefa</p>
+            </div>
+        </div>
+
+        <div class="board">
+            <h3>Concluído</h3>
+            <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)">
+            </ul>
+            <div class="add-card" onclick="addCard(this)">
+                <p>Adicionar tarefa</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+    <section id="instagram">
+        <h2 style="color: #ffffff; margin-bottom: 2px; text-align: center;">Acompanhe as nossas dicas!</h2>
+        <div>
+            <p><a href="https://www.instagram.com/projeto_opm_"><img src="../insta1.png" alt="instagram" style="width: 41px;margin-left: 48%;height: 35px;"></a></p>
+        </div>    
+    </section>
+</body>
+</html>
